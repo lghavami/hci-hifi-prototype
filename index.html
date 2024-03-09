@@ -6,10 +6,30 @@
   </head>
   <body>
     <!--Div for each page; will use javascript to show and hide pages based on user input in nav-->
-    <div id="home"></div>
-    <div id="map"></div>
-    <div id="events"></div>
-    <div id="settings"></div>
+    <div id="home" class="page"></div>
+
+    <div id="map" class="page"></div>
+
+    <div id="events" class="page">
+      <!--ideally this would come from a database-->
+      <div class="events-module">
+        <img
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Starry_Night&psig=AOvVaw1ugOrDvind26HsIX__2_Jb&ust=1710087142921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIig55nJ54QDFQAAAAAdAAAAABAD"
+          alt="Van Gogh's Starry Night"
+        />
+        <h3>Event Name</h3>
+        <p>Availabilty: March 03 - September 01</p>
+        <p class="event-description">
+          Some text to describe the exhibition. Exhibition explore something
+          about something, artistic and humanities nonesense and also some
+          sense. Features some guy who painted, possibly even a girl who
+          painted.
+        </p>
+        <!--w/ JS, make a toggle function for see less/see more-->
+      </div>
+    </div>
+
+    <div id="settings" class="page"></div>
     <nav></nav>
     <footer></footer>
   </body>
