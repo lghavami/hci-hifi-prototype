@@ -5,6 +5,19 @@ body {
   background-color: #f4f4f4;
 }
 
+h3, h2, h1 {
+    text-transform: uppercase;
+    font-weight: 400px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 45px
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -22,10 +35,9 @@ header {
   display: none;
 }
 
-#gallery-header button {
-  padding: 20px;
+#logo {
+    height: 100px;
 }
-
 
 #language-selection {
   text-align: center;
@@ -39,6 +51,7 @@ header {
   margin-bottom: 100px; /* Add space between buttons */
   width: 600px; /* Set a fixed width for buttons */
   height: 200px; /* Set a fixed height for buttons */
+  font-size: 100px;
 }
 
 #settings button {
@@ -61,6 +74,10 @@ header {
   display: none;
 }
 
+.page h2 {
+    text-align: center;
+}
+
 .active {
   display: block;
 }
@@ -80,16 +97,19 @@ header {
 #main-menu button {
   width: 20%;
   font-size: 5;
+  background-color: #444;
+  border: none;
 }
 
 #main-menu i {
-  width: 95%;
+  font-size: 90px;
+  color: white;
 }
 
 .events-module {
-  background-color: rgb(245, 238, 220);
+  background-color: rgba(164, 125, 25, 0.137);
   margin: 20px;
-  padding: 20px;
+  padding: 55px;
   border-radius: 5%;
 }
 
