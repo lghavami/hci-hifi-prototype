@@ -63,10 +63,13 @@ header {
 #main-menu button {
   width: 20%;
   font-size: 5;
+  background-color: #444;
+  border: none;
 }
 
 #main-menu i {
-  width: 95%;
+  font-size: 90px;
+  color: white;
 }
 
 .events-module {
