@@ -5,35 +5,66 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <!--Div for each page; will use javascript to show and hide pages based on user input in nav-->
-    <div id="home" class="page"></div>
+    <header id="header">
+      <h1>Hello!</h1>
+    </header>
 
-        <div id="map" class="page">
-            <h2>Map Page</h2>
-            <!-- Map page content goes here -->
-        </div>
-
-    <div id="events" class="page">
-      <!--ideally this would come from a database-->
-      <div class="events-module">
-        <img
-          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Starry_Night&psig=AOvVaw1ugOrDvind26HsIX__2_Jb&ust=1710087142921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIig55nJ54QDFQAAAAAdAAAAABAD"
-          alt="Van Gogh's Starry Night"
-        />
-        <h3>Event Name</h3>
-        <p>Availabilty: March 03 - September 01</p>
-        <p class="event-description">
-          Some text to describe the exhibition. Exhibition explore something
-          about something, artistic and humanities nonesense and also some
-          sense. Features some guy who painted, possibly even a girl who
-          painted.
-        </p>
-        <!--w/ JS, make a toggle function for see less/see more-->
-      </div>
+    <div id="gallery-header">
+      <h1>Gallery</h1>
     </div>
 
-    <div id="settings" class="page"></div>
-    <nav></nav>
-    <footer></footer>
+    <div id="language-selection">
+      <p>Select your language:</p>
+      <button onclick="changeLanguage('en')">English</button>
+      <button onclick="changeLanguage('nl')">Dutch</button>
+      <button onclick="changeLanguage('de')">German</button>
+      <button onclick="changeLanguage('fr')">French</button>
+    </div>
+
+    <div id="content">
+      <div id="home" class="page">
+        <h2>Welcome to the Home Page</h2>
+        <!-- Home page content goes here -->
+      </div>
+
+      <div id="map" class="page">
+        <h2>Map Page</h2>
+        <!-- Map page content goes here -->
+      </div>
+
+      <div id="events" class="page">
+        <h2>Events Page</h2>
+        <!-- Events page content goes here -->
+        <!--ideally this would come from a database-->
+        <div class="events-module">
+          <img
+            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Starry_Night&psig=AOvVaw1ugOrDvind26HsIX__2_Jb&ust=1710087142921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIig55nJ54QDFQAAAAAdAAAAABAD"
+            alt="Van Gogh's Starry Night"
+          />
+          <h3>Event Name</h3>
+          <p>Availabilty: March 03 - September 01</p>
+          <p class="event-description">
+            Some text to describe the exhibition. Exhibition explore something
+            about something, artistic and humanities nonesense and also some
+            sense. Features some guy who painted, possibly even a girl who
+            painted.
+          </p>
+          <!--w/ JS, make a toggle function for see less/see more-->
+        </div>
+      </div>
+
+      <div id="settings" class="page">
+        <h2>Settings Page</h2>
+        <!-- Settings page content goes here -->
+      </div>
+
+      <div id="main-menu">
+        <button onclick="changePage('home')">Home</button>
+        <button onclick="changePage('map')">Map</button>
+        <button onclick="changePage('events')">Events</button>
+        <button onclick="changePage('settings')">Settings</button>
+      </div>
+    </div>
+    <!--Div for each page; will use javascript to show and hide pages based on user input in nav-->
   </body>
 </html>
