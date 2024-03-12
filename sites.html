@@ -25,8 +25,15 @@
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px;
+            margin: 5px;
+            padding: 30px;
             display: none;
+            /* flex-direction: column; */
+            /*align-items: center;*/
+        }
+
+        #gallery-header button {
+            padding: 20px;
         }
 
         #language-selection {
@@ -38,9 +45,21 @@
         }
 
         #language-selection button {
+            margin-bottom: 25px;
+            margin-top: 25px; /* Add space between buttons */
+            width: 200px; /* Set a fixed width for buttons */
+            height: 75px; /* Set a fixed height for buttons */
+        }
+
+        #settings button {
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            flex-direction: column; /* Updated to column */
+            align-items: center;
             margin-bottom: 10px; /* Add space between buttons */
             width: 150px; /* Set a fixed width for buttons */
-            height: 50px; /* Set a fixed height for buttons */
+            height: 50px;
         }
 
         #content {
@@ -76,7 +95,9 @@
     </header>
 
     <div id="gallery-header">
-        <h1>Gallery</h1>
+        
+        <h1><button> Account </button>      Gallery      <button> Search </button></h1>
+    
     </div>
 
     <div id="language-selection">
@@ -105,7 +126,11 @@
 
         <div id="settings" class="page">
             <h2>Settings Page</h2>
-            <!-- Settings page content goes here -->
+            <button>Change Language</button>
+            <button>Change Profile</button>
+            <button>Change Audio</button>
+            <button>Change Color Mode</button>
+            <p>Change </p>
         </div>
 
         <div id="main-menu">
