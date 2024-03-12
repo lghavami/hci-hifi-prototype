@@ -3,6 +3,10 @@
   <head>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1a8f676590.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
@@ -10,35 +14,50 @@
     </header>
 
     <div id="gallery-header">
-      <h1>Gallery</h1>
+      <h1>Miscellaneous Gallery</h1>
     </div>
 
     <div id="language-selection">
       <p>Select your language:</p>
       <button onclick="changeLanguage('en')">English</button>
-      <button onclick="changeLanguage('nl')">Dutch</button>
-      <button onclick="changeLanguage('de')">German</button>
-      <button onclick="changeLanguage('fr')">French</button>
+      <button onclick="changeLanguage('nl')">Nederlands</button>
+      <button onclick="changeLanguage('de')">Deutsch</button>
+      <button onclick="changeLanguage('fr')">Fran&ccedilais</button>
     </div>
 
     <div id="content">
       <div id="home" class="page">
-        <h2>Welcome to the Home Page</h2>
+        <h2>Welcome to the Gallery</h2>
         <!-- Home page content goes here -->
       </div>
 
       <div id="map" class="page">
-        <h2>Map Page</h2>
+        <h2>Interactive Map</h2>
         <!-- Map page content goes here -->
       </div>
 
       <div id="events" class="page">
-        <h2>Events Page</h2>
+        <h2>Upcoming Events</h2>
         <!-- Events page content goes here -->
         <!--ideally this would come from a database-->
         <div class="events-module">
           <img
-            src="///"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            alt="Van Gogh's Starry Night"
+          />
+          <h3>Event Name</h3>
+          <p>Availabilty: March 03 - September 01</p>
+          <p class="event-description">
+            Some text to describe the exhibition. Exhibition explore something
+            about something, artistic and humanities nonesense and also some
+            sense. Features some guy who painted, possibly even a girl who
+            painted.
+          </p>
+          <!--w/ JS, make a toggle function for see less/see more-->
+        </div>
+        <div class="events-module">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
             alt="Van Gogh's Starry Night"
           />
           <h3>Event Name</h3>
@@ -59,10 +78,18 @@
       </div>
 
       <div id="main-menu">
-        <button onclick="changePage('home')">Home</button>
-        <button onclick="changePage('map')">Map</button>
-        <button onclick="changePage('events')">Events</button>
-        <button onclick="changePage('settings')">Settings</button>
+        <button onclick="changePage('home')">
+          <i class="fa-solid fa-house"></i>
+        </button>
+        <button onclick="changePage('map')">
+          <i class="fa-solid fa-map"></i>
+        </button>
+        <button onclick="changePage('events')">
+          <i class="fa-solid fa-calendar-days"></i>
+        </button>
+        <button onclick="changePage('settings')">
+          <i class="fa-solid fa-gear"></i>
+        </button>
       </div>
     </div>
     <!--Div for each page; will use javascript to show and hide pages based on user input in nav-->

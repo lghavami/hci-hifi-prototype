@@ -1,60 +1,84 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    transition: display 0.5s ease; /* Add transition for smoother hiding/showing */
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transition: display 0.5s ease; /* Add transition for smoother hiding/showing */
 }
 
 #gallery-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    display: none;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: none;
 }
 
 #language-selection {
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Updated to column */
-    align-items: center; /* Center-align the buttons */
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Updated to column */
+  align-items: center; /* Center-align the buttons */
 }
 
 #language-selection button {
-    margin-bottom: 10px; /* Add space between buttons */
-    width: 150px; /* Set a fixed width for buttons */
-    height: 50px; /* Set a fixed height for buttons */
+  margin-bottom: 100px; /* Add space between buttons */
+  width: 600px; /* Set a fixed width for buttons */
+  height: 200px; /* Set a fixed height for buttons */
 }
 
 #content {
-    display: none;
-    padding: 20px;
+  display: none;
+  padding: 20px;
 }
 
 .page {
-    display: none;
+  display: none;
 }
 
 .active {
-    display: block;
+  display: block;
 }
 
 #main-menu {
-    background-color: #444;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;
+  background-color: #444;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 150px;
+}
+
+#main-menu button {
+  width: 20%;
+  font-size: 5;
+}
+
+#main-menu i {
+  width: 95%;
+}
+
+.events-module {
+  background-color: rgb(245, 238, 220);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+.events-module img {
+  width: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 5%;
 }
