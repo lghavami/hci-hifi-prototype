@@ -11,8 +11,8 @@ function changeLanguage(language) {
   document.getElementById("header").style.display = "none"; // Hide header on language selection
   document.getElementById("gallery-header").style.display = "none"; // Hide gallery header on language selection
 
-  // route to homepage
-  changePage(home);
+  //show homepage
+  changePage("home");
 }
 
 function changePage(page) {
