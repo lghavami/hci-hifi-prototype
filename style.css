@@ -17,9 +17,15 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  margin: 5px;
+  padding: 30px;
   display: none;
 }
+
+#gallery-header button {
+  padding: 20px;
+}
+
 
 #language-selection {
   text-align: center;
@@ -33,6 +39,17 @@ header {
   margin-bottom: 100px; /* Add space between buttons */
   width: 600px; /* Set a fixed width for buttons */
   height: 200px; /* Set a fixed height for buttons */
+}
+
+#settings button {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Updated to column */
+  align-items: center;
+  margin-bottom: 10px; /* Add space between buttons */
+  width: 150px; /* Set a fixed width for buttons */
+  height: 50px;
 }
 
 #content {
