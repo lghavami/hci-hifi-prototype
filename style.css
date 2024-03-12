@@ -1,9 +1,60 @@
-/*GENERAL STYLES*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-/*HOME specific*/
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    transition: display 0.5s ease; /* Add transition for smoother hiding/showing */
+}
 
-/*MAP specific*/
+#gallery-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
 
-/*EVENTS specific*/
+#language-selection {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Updated to column */
+    align-items: center; /* Center-align the buttons */
+}
 
-/*SETTINGS specific*/
+#language-selection button {
+    margin-bottom: 10px; /* Add space between buttons */
+    width: 150px; /* Set a fixed width for buttons */
+    height: 50px; /* Set a fixed height for buttons */
+}
+
+#content {
+    display: none;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#main-menu {
+    background-color: #444;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}

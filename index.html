@@ -1,59 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
   </head>
   <body>
     <!--Div for each page; will use javascript to show and hide pages based on user input in nav-->
-    <div id="lang" class="page">
-      <h1>Welcome!</h1>
-      <!--icon here-->
-      <p><em>choose your language</em></p>
-      <div class="lang-option">Nederlands</div>
-      <div class="lang-option">English</div>
-      <div class="lang-option">Fran&ccedilais</div>
-      <div class="lang-option">Deutsch</div>
-    </div>
-
     <div id="home" class="page"></div>
 
-    <div id="map" class="page"></div>
+        <div id="map" class="page">
+            <h2>Map Page</h2>
+            <!-- Map page content goes here -->
+        </div>
 
     <div id="events" class="page">
-      <!--ideally this would come from a database, and populate with Javascript-->
+      <!--ideally this would come from a database-->
       <div class="events-module">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/525px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+          src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FThe_Starry_Night&psig=AOvVaw1ugOrDvind26HsIX__2_Jb&ust=1710087142921000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIig55nJ54QDFQAAAAAdAAAAABAD"
           alt="Van Gogh's Starry Night"
         />
-        <h3>Van Gogh Exhibition</h3>
-        <p>Availability: March 03 - September 01</p>
+        <h3>Event Name</h3>
+        <p>Availabilty: March 03 - September 01</p>
         <p class="event-description">
           Some text to describe the exhibition. Exhibition explore something
           about something, artistic and humanities nonesense and also some
           sense. Features some guy who painted, possibly even a girl who
           painted.
         </p>
-        <div class="events-module">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/525px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-            alt="Van Gogh's Starry Night"
-          />
-          <h3>Painting Workshop</h3>
-          <p>Availability: March 03 - September 01</p>
-          <p class="event-description">
-            <!--w/ JS, make a toggle function for see less/see more-->
-          </p>
-        </div>
+        <!--w/ JS, make a toggle function for see less/see more-->
       </div>
     </div>
 
     <div id="settings" class="page"></div>
-
-    <nav>
-      <!--add icons here for each page -- home, map, events, settings-->
-    </nav>
+    <nav></nav>
+    <footer></footer>
   </body>
 </html>

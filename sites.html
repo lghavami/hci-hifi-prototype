@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mobile Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            transition: display 0.5s ease; /* Add transition for smoother hiding/showing */
+        }
+
+        #gallery-header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: none;
+        }
+
+        #language-selection {
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Updated to column */
+            align-items: center; /* Center-align the buttons */
+        }
+
+        #language-selection button {
+            margin-bottom: 10px; /* Add space between buttons */
+            width: 150px; /* Set a fixed width for buttons */
+            height: 50px; /* Set a fixed height for buttons */
+        }
+
+        #content {
+            display: none;
+            padding: 20px;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        #main-menu {
+            background-color: #444;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>Hello!</h1>
+    </header>
+
+    <div id="gallery-header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div id="language-selection">
+        <p>Select your language:</p>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('nl')">Dutch</button>
+        <button onclick="changeLanguage('de')">German</button>
+        <button onclick="changeLanguage('fr')">French</button>
+    </div>
+
+    <div id="content">
+        <div id="home" class="page">
+            <h2>Welcome to the Home Page</h2>
+            <!-- Home page content goes here -->
+        </div>
+
+        <div id="map" class="page">
+            <h2>Map Page</h2>
+            <!-- Map page content goes here -->
+        </div>
+
+        <div id="events" class="page">
+            <h2>Events Page</h2>
+            <!-- Events page content goes here -->
+        </div>
+
+        <div id="settings" class="page">
+            <h2>Settings Page</h2>
+            <!-- Settings page content goes here -->
+        </div>
+
+        <div id="main-menu">
+            <button onclick="changePage('home')">Home</button>
+            <button onclick="changePage('map')">Map</button>
+            <button onclick="changePage('events')">Events</button>
+            <button onclick="changePage('settings')">Settings</button>
+        </div>
+    </div>
+
+    <script>
+            let currentLanguage = '';
+    
+    // Set the default page to 'home'
+    changePage('home');
+
+    function changeLanguage(language) {
+        currentLanguage = language;
+        // You can add logic to update content based on the selected language
+        document.getElementById('language-selection').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        document.getElementById('header').style.display = 'none'; // Hide header on language selection
+        document.getElementById('gallery-header').style.display = 'none'; // Hide gallery header on language selection
+    }
+
+    function changePage(page) {
+        // Hide all pages
+        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+        // Show the selected page
+        document.getElementById(page).classList.add('active');
+
+        // Show or hide the gallery header based on the page
+        document.getElementById('gallery-header').style.display = (page !== 'home') ? 'block' : 'none';
+    }
+
+    </script>
+</body>
+
+</html>

@@ -1,31 +1,23 @@
-/**
- * EVENT HANDLERS
- */
-// UPON PAGE LOAD
-var home, map, events, settings; // booleans for page status
+let currentLanguage = '';
 
-async function pageLoadHandler(event) {
-  // Set home to true/visible, all other pages should be hidden
-  home = true;
-  map = false;
-  events = false;
-  settings = false;
-  // set all other pages to hide
+// Set the default page to 'home'
+changePage('home');
+
+function changeLanguage(language) {
+    currentLanguage = language;
+    // You can add logic to update content based on the selected language
+    document.getElementById('language-selection').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+    document.getElementById('header').style.display = 'none'; // Hide header on language selection
+    document.getElementById('gallery-header').style.display = 'none'; // Hide gallery header on language selection
 }
 
-document.addEventListener("DOMContentLoaded", pageLoadHandler);
+function changePage(page) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    // Show the selected page
+    document.getElementById(page).classList.add('active');
 
-// SHOW PAGES BASED ON NAV
-// event listener for each icon
-
-/**
- * SMALL/HELPER FUNCTIONS
- */
-
-// SHOW IF PAGE = TRUE
-function showPage() {
-  if (home == true) {
-    // show lang page, click english to get to home
-  }
-  // else if etc
+    // Show or hide the gallery header based on the page
+    document.getElementById('gallery-header').style.display = (page !== 'home') ? 'block' : 'none';
 }
