@@ -28,6 +28,17 @@ p {
   font-size: 20px;
 }
 
+button {
+  border: none;
+  border-radius: 200px;
+  background-color: #cecece;
+}
+
+button:active {
+  background-color: rgb(154, 0, 0);
+  color: white;
+}
+
 header {
   background-color: #333;
   color: #fff;
@@ -43,6 +54,11 @@ header {
   margin: 5px;
   padding: 30px;
   display: none;
+}
+
+#gallery-header-title {
+  display: flex;
+  justify-content: space-around;
 }
 
 #logo {
@@ -64,15 +80,20 @@ header {
   font-size: 100px;
 }
 
-#settings button {
+#settings-modules {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column; /* Updated to column */
-  align-items: center;
+  align-items: center; /* Center-align the buttons */
+}
+
+#settings button {
+  text-align: left;
+  padding: 30px;
   margin-bottom: 10px; /* Add space between buttons */
-  width: 150px; /* Set a fixed width for buttons */
-  height: 50px;
+  width: 90%;
+  font-size: 50px;
 }
 
 #content {
@@ -93,7 +114,7 @@ header {
 }
 
 #main-menu {
-  background-color: #444;
+  background-color: #333;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -105,14 +126,17 @@ header {
   margin-top: 200px;
 }
 
-#main-menu button {
+#main-menu button,
+#gallery-header-title button {
   width: 20%;
   font-size: 5;
   background-color: #444;
   border: none;
+  border-radius: 50%;
 }
 
-#main-menu i {
+#main-menu i,
+#gallery-header-title i {
   font-size: 90px;
   color: white;
 }

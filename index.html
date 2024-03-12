@@ -19,7 +19,13 @@
         src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_museum_2017.png"
         alt="museum logo"
       />
-      <h1><button>Account</button> Gallery <button>Search</button></h1>
+      <div id="gallery-header-title">
+        <button><i class="fa-solid fa-user button-icon"></i></button>
+        <h1>Gallery</h1>
+        <button>
+          <i class="fa-solid fa-magnifying-glass button-icon"></i>
+        </button>
+      </div>
     </div>
 
     <div id="language-selection">
@@ -42,9 +48,9 @@
         </div>
         <div class="home-module">
           <h3>Your tickets</h3>
-          <p>2x Adults - 15$</p>
-          <p>2xChildren - 5$</p>
-          <p>1x Senior - 10$</p>
+          <p>2x Adults - &euro15</p>
+          <p>2x Children - &euro5</p>
+          <p>1x Senior - &euro10</p>
 
           <p>Total: 50$</p>
         </div>
@@ -98,7 +104,7 @@
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
             alt="Van Gogh's Starry Night"
           />
-          <h3>Event Name</h3>
+          <h3>Van Gogh Exhibition</h3>
           <p>Availabilty: March 03 - September 01</p>
           <p class="event-description">
             Some text to describe the exhibition. Exhibition explore something
@@ -111,10 +117,10 @@
 
         <div class="events-module" id="gallery-2">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqre3tHQOgcaNYkVnwyLlJfd_5QshfXRNPJIY_PT2gVw&s"
             alt="Van Gogh's Starry Night"
           />
-          <h3>Event Name</h3>
+          <h3>Matthew Wong</h3>
           <p>Availabilty: March 03 - September 01</p>
           <p class="event-description">
             Some text to describe the exhibition. Exhibition explore something
@@ -127,11 +133,26 @@
 
         <div class="events-module" id="gallery-3">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
-            alt="Van Gogh's Starry Night"
+            src="https://www.ecokidsart.com/wp-content/uploads/2014/07/ecokidsartmural.jpg"
+            alt="Children painting"
           />
-          <h3>Event Name</h3>
-          <p>Availabilty: March 03 - September 01</p>
+          <h3>Interactive Painting Activity</h3>
+          <p>Availabilty: April 04 - April 20</p>
+          <p class="event-description">
+            Some text to describe the exhibition. Exhibition explore something
+            about something, artistic and humanities nonesense and also some
+            sense. Features some guy who painted, possibly even a girl who
+            painted.
+          </p>
+          <!--w/ JS, make a toggle function for see less/see more-->
+        </div>
+        <div class="events-module" id="gallery-3">
+          <img
+            src="https://lh3.googleusercontent.com/-5kysEx2zTD4aCQMXrIdygrGKrjQ7sN9dQUc-BidyWW-vE2z_g4fFPA-p2n9tSbpjA=s1200"
+            alt="Renoir"
+          />
+          <h3>Interactive Painting Activity</h3>
+          <p>Availabilty: April 04 - April 20</p>
           <p class="event-description">
             Some text to describe the exhibition. Exhibition explore something
             about something, artistic and humanities nonesense and also some
@@ -144,12 +165,14 @@
 
       <div id="settings" class="page">
         <h2>Settings Page</h2>
-        <button>Change Language</button>
-        <button>Change Profile</button>
-        <button>Change Audio</button>
-        <button>Change Color Mode</button>
-        <button>Help</button>
-        <button>About</button>
+        <div id="settings-modules">
+          <button>Change Language</button>
+          <button>Change Profile</button>
+          <button>Change Audio</button>
+          <button>Change Color Mode</button>
+          <button>Help</button>
+          <button>About</button>
+        </div>
       </div>
 
       <div class="footer-space"></div>
