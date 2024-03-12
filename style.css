@@ -5,17 +5,27 @@ body {
   background-color: #f4f4f4;
 }
 
-h3, h2, h1 {
-    text-transform: uppercase;
-    font-weight: 400px;
+h3,
+h2,
+h1 {
+  text-transform: uppercase;
+  font-weight: 400px;
 }
 
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 h2 {
-    font-size: 45px
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
 }
 
 header {
@@ -36,7 +46,7 @@ header {
 }
 
 #logo {
-    height: 100px;
+  height: 100px;
 }
 
 #language-selection {
@@ -75,7 +85,7 @@ header {
 }
 
 .page h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .active {
@@ -92,6 +102,7 @@ header {
   justify-content: space-around;
   padding: 10px;
   height: 150px;
+  margin-top: 200px;
 }
 
 #main-menu button {
@@ -106,7 +117,8 @@ header {
   color: white;
 }
 
-.events-module {
+.events-module,
+.home-module {
   background-color: rgba(164, 125, 25, 0.137);
   margin: 20px;
   padding: 55px;
@@ -118,4 +130,14 @@ header {
   margin: auto;
   display: block;
   border-radius: 5%;
+}
+
+#map-img {
+  display: block;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.footer-space {
+  padding: 100px;
 }

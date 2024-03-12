@@ -16,6 +16,8 @@ function changeLanguage(language) {
 }
 
 function changePage(page) {
+  // Make sure all events on map page are cleared
+  document.getElementById("map-events").innerHTML = "";
   // Hide all pages
   document
     .querySelectorAll(".page")
@@ -25,4 +27,13 @@ function changePage(page) {
 
   // Show or hide the gallery header based on the page
   document.getElementById("gallery-header").style.display = "block";
+}
+
+function mapEvent(eventId) {
+  // clear other events on the page
+  document.getElementById("map-events").innerHTML = "";
+
+  // based on area on map, show corresponding event
+  eventMod = document.getElementById(eventId).cloneNode(true);
+  document.getElementById("map-events").appendChild(eventMod);
 }

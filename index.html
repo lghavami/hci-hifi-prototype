@@ -19,7 +19,7 @@
         src="https://upload.wikimedia.org/wikipedia/commons/0/00/Logo_museum_2017.png"
         alt="museum logo"
       />
-      <h1><button> Account </button> Gallery <button> Search </button></h1>
+      <h1><button>Account</button> Gallery <button>Search</button></h1>
     </div>
 
     <div id="language-selection">
@@ -33,19 +33,67 @@
     <div id="content">
       <div id="home" class="page">
         <h2>Welcome to the Gallery</h2>
+        <div class="home-module">
+          <h3>Opening Hours</h3>
+          <p>
+            Now: <span class="open-closed">Open</span>
+            Mon-Fri: 8:30-18.00 Weekend and Holidays : 10:00-17:00
+          </p>
+        </div>
+        <div class="home-module">
+          <h3>Your tickets</h3>
+          <p>2x Adults - 15$</p>
+          <p>2xChildren - 5$</p>
+          <p>1x Senior - 10$</p>
+
+          <p>Total: 50$</p>
+        </div>
         <!-- Home page content goes here -->
       </div>
 
       <div id="map" class="page">
         <h2>Interactive Map</h2>
         <!-- Map page content goes here -->
+        <div id="map-overview">
+          <img
+            id="map-img"
+            src="https://en.wikiarquitectura.com/wp-content/uploads/2018/07/Stedelijk-Museum-p1.jpg"
+            alt="floorplan from Stedelijk museum"
+            usemap="#workmap"
+            width="900"
+            height="900"
+          />
+
+          <map name="workmap">
+            <area
+              shape="rect"
+              coords="0,0,450,450"
+              alt="Gallery area 1"
+              onclick="mapEvent('gallery-1')"
+            />
+            <area
+              shape="rect"
+              coords="450,450,900,900"
+              alt="Gallery area 2"
+              onclick="mapEvent('gallery-2')"
+            />
+            <area
+              shape="rect"
+              coords="0,450,450,900"
+              alt="Gallery area 3"
+              onclick="mapEvent('gallery-3')"
+            />
+          </map>
+
+          <div id="map-events"></div>
+        </div>
       </div>
 
       <div id="events" class="page">
         <h2>Upcoming Events</h2>
         <!-- Events page content goes here -->
         <!--ideally this would come from a database-->
-        <div class="events-module">
+        <div class="events-module" id="gallery-1">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
             alt="Van Gogh's Starry Night"
@@ -60,7 +108,24 @@
           </p>
           <!--w/ JS, make a toggle function for see less/see more-->
         </div>
-        <div class="events-module">
+
+        <div class="events-module" id="gallery-2">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+            alt="Van Gogh's Starry Night"
+          />
+          <h3>Event Name</h3>
+          <p>Availabilty: March 03 - September 01</p>
+          <p class="event-description">
+            Some text to describe the exhibition. Exhibition explore something
+            about something, artistic and humanities nonesense and also some
+            sense. Features some guy who painted, possibly even a girl who
+            painted.
+          </p>
+          <!--w/ JS, make a toggle function for see less/see more-->
+        </div>
+
+        <div class="events-module" id="gallery-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1200px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
             alt="Van Gogh's Starry Night"
@@ -86,6 +151,8 @@
         <button>Help</button>
         <button>About</button>
       </div>
+
+      <div class="footer-space"></div>
 
       <div id="main-menu">
         <button onclick="changePage('home')">
